@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+            "source": "^/pocpython/(.*)$",
+            "target": "$1",
+            "destination": "pocpython"
+        }
+    ]
+}

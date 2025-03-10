@@ -1,0 +1,16 @@
+mta_archives/
+node_modules/
+default-*.json
+.env
+.yo-rc.json
+.vscode/
+coverage/
+gen/
+dist/
+*-content.zip
+manifest-bundle.zip
+connection.properties
+*.db
+*.mtar
+*.mta
+*.log

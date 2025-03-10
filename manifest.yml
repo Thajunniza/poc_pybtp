@@ -7,3 +7,21 @@ applications:
   buildpacks: 
   - python_buildpack
   command: python server.py
+  services:
+  - pyuaa
+- name: web
+  random-route: true
+  path: web
+  memory: 128M
+  env:
+    destinations: >
+      [
+        {
+          "name":"pocpython",
+          "url":"https://pocpython-active-capybara-vz.cfapps.us10.hana.ondemand.com/",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+  - pyuaa
+
